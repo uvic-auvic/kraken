@@ -1,0 +1,22 @@
+[3.307s] Invoking command in '/home/auvic/kraken/src/kraken': PYTHONPATH=/home/auvic/kraken/build/kraken/prefix_override:/home/auvic/kraken/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kraken build --build-base /home/auvic/kraken/build/kraken/build install --record /home/auvic/kraken/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed
+[4.257s] running egg_info
+[4.264s] writing ../../build/kraken/kraken.egg-info/PKG-INFO
+[4.266s] writing dependency_links to ../../build/kraken/kraken.egg-info/dependency_links.txt
+[4.266s] writing entry points to ../../build/kraken/kraken.egg-info/entry_points.txt
+[4.267s] writing requirements to ../../build/kraken/kraken.egg-info/requires.txt
+[4.268s] writing top-level names to ../../build/kraken/kraken.egg-info/top_level.txt
+[4.412s] reading manifest file '../../build/kraken/kraken.egg-info/SOURCES.txt'
+[4.419s] writing manifest file '../../build/kraken/kraken.egg-info/SOURCES.txt'
+[4.419s] running build
+[4.419s] running build_py
+[4.420s] running install
+[4.422s] running install_lib
+[4.426s] running install_data
+[4.428s] running install_egg_info
+[4.436s] removing '/home/auvic/kraken/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info' (and everything under it)
+[4.437s] Copying ../../build/kraken/kraken.egg-info to /home/auvic/kraken/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info
+[4.440s] running install_scripts
+[4.514s] Installing depth_sensor script to /home/auvic/kraken/install/kraken/lib/kraken
+[4.514s] Installing imu script to /home/auvic/kraken/install/kraken/lib/kraken
+[4.515s] writing list of installed files to '/home/auvic/kraken/build/kraken/install.log'
+[4.614s] Invoked command in '/home/auvic/kraken/src/kraken' returned '0': PYTHONPATH=/home/auvic/kraken/build/kraken/prefix_override:/home/auvic/kraken/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kraken build --build-base /home/auvic/kraken/build/kraken/build install --record /home/auvic/kraken/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed
