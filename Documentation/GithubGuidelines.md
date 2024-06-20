@@ -40,7 +40,7 @@ git push
 **Creating a Branch**
 - Create a new branch by selecting the branch dropdown and typing the name of the new branch
 - Give the branch a name following the below format:
-    - <issue number>-<issue-title>
+    - `<issue number>-<issue-title>`
     - Eg. 4-create-peripheral-test
 
 ---
