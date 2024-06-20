@@ -51,7 +51,7 @@ git push
 - Select “Create pull request”
 - In the description, include any differences between the issue and work done
 - Under “Development” add the issue that the pull request will be closing
-- Add any relevant people as reviewers (optional might be preffered but can make mandatory if they're active)
+- Add any relevant people as reviewers (Must add software lead as reviewer, good to assign yourself on the PR so people know you wrote the code)
 
 ---
 
