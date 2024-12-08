@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 """
-Depth sensor publisher node.
+IMU sensor publisher node.
 """
 import sys
 
-sys.path.append("/home/auvic/ROS/kraken/src/kraken/kraken/include")
+sys.path.append("/home/auvic/kraken/ROS/src/kraken/kraken/include")
 
 import rclpy
 from rclpy.node import Node
@@ -31,9 +31,13 @@ class IMU(Node):
     def timer_callback(self):
         
         # Get data from the imu
-        x, y, z = self.poll_sensor()
+        # {'Euler Angles': (roll, pitch, yaw), DeltaV: (x, y, z)}
+        data = self.poll_sensor()
 
-        if x or y or z:
+        if data:
+            x = data['DeltaV'][0]
+            y = data['DeltaV'][1]
+            z = data['DeltaV'][2]
             self.logger.info("x: %f, y: %f, z: %f" % (x, y, z))
 
             # Publish
