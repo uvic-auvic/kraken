@@ -1,0 +1,22 @@
+[3.045s] Invoking command in '/home/auvic/kraken/ROS/src/kraken': PYTHONPATH=/home/auvic/kraken/ROS/build/kraken/prefix_override:/home/auvic/kraken/ROS/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kraken build --build-base /home/auvic/kraken/ROS/build/kraken/build install --record /home/auvic/kraken/ROS/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed
+[3.948s] running egg_info
+[3.950s] writing ../../build/kraken/kraken.egg-info/PKG-INFO
+[3.951s] writing dependency_links to ../../build/kraken/kraken.egg-info/dependency_links.txt
+[3.951s] writing entry points to ../../build/kraken/kraken.egg-info/entry_points.txt
+[3.952s] writing requirements to ../../build/kraken/kraken.egg-info/requires.txt
+[3.952s] writing top-level names to ../../build/kraken/kraken.egg-info/top_level.txt
+[4.097s] reading manifest file '../../build/kraken/kraken.egg-info/SOURCES.txt'
+[4.102s] writing manifest file '../../build/kraken/kraken.egg-info/SOURCES.txt'
+[4.102s] running build
+[4.103s] running build_py
+[4.103s] running install
+[4.105s] running install_lib
+[4.109s] running install_data
+[4.111s] running install_egg_info
+[4.117s] removing '/home/auvic/kraken/ROS/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info' (and everything under it)
+[4.118s] Copying ../../build/kraken/kraken.egg-info to /home/auvic/kraken/ROS/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info
+[4.121s] running install_scripts
+[4.193s] Installing depth_sensor script to /home/auvic/kraken/ROS/install/kraken/lib/kraken
+[4.194s] Installing imu script to /home/auvic/kraken/ROS/install/kraken/lib/kraken
+[4.195s] writing list of installed files to '/home/auvic/kraken/ROS/build/kraken/install.log'
+[4.293s] Invoked command in '/home/auvic/kraken/ROS/src/kraken' returned '0': PYTHONPATH=/home/auvic/kraken/ROS/build/kraken/prefix_override:/home/auvic/kraken/ROS/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/kraken build --build-base /home/auvic/kraken/ROS/build/kraken/build install --record /home/auvic/kraken/ROS/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed

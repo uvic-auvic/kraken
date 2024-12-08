@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.002485] (kraken) JobQueued: {'identifier': 'kraken', 'dependencies': OrderedDict()}
+[0.003337] (kraken) JobStarted: {'identifier': 'kraken'}
+[0.094363] (-) TimerEvent: {}
+[0.195280] (-) TimerEvent: {}
+[0.296283] (-) TimerEvent: {}
+[0.397048] (-) TimerEvent: {}
+[0.497941] (-) TimerEvent: {}
+[0.598725] (-) TimerEvent: {}
+[0.699371] (-) TimerEvent: {}
+[0.800869] (-) TimerEvent: {}
+[0.904224] (-) TimerEvent: {}
+[1.004835] (-) TimerEvent: {}
+[1.105554] (-) TimerEvent: {}
+[1.206519] (-) TimerEvent: {}
+[1.307163] (-) TimerEvent: {}
+[1.407840] (-) TimerEvent: {}
+[1.508679] (-) TimerEvent: {}
+[1.609570] (-) TimerEvent: {}
+[1.710502] (-) TimerEvent: {}
+[1.811142] (-) TimerEvent: {}
+[1.911833] (-) TimerEvent: {}
+[2.012515] (-) TimerEvent: {}
+[2.113131] (-) TimerEvent: {}
+[2.213758] (-) TimerEvent: {}
+[2.314436] (-) TimerEvent: {}
+[2.415066] (-) TimerEvent: {}
+[2.515687] (-) TimerEvent: {}
+[2.616342] (-) TimerEvent: {}
+[2.717124] (-) TimerEvent: {}
+[2.818239] (-) TimerEvent: {}
+[2.918906] (-) TimerEvent: {}
+[3.019529] (-) TimerEvent: {}
+[3.120208] (-) TimerEvent: {}
+[3.220864] (-) TimerEvent: {}
+[3.321589] (-) TimerEvent: {}
+[3.326418] (kraken) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../build/kraken', 'build', '--build-base', '/home/auvic/kraken/ROS/src/build/kraken/build', 'install', '--record', '/home/auvic/kraken/ROS/src/build/kraken/install.log', '--install-scripts', '$base/lib/kraken', '--single-version-externally-managed'], 'cwd': '/home/auvic/kraken/ROS/src/kraken', 'env': {'OPENBLAS_CORETYPE': 'ARMV8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GTK_CSD': '0', 'USER': 'auvic', 'LANGUAGE': 'en_CA:en', 'TEXTDOMAIN': 'im-config', 'XDG_SESSION_TYPE': 'x11', 'LD_LIBRARY_PATH': '/opt/ros/eloquent/opt/yaml_cpp_vendor/lib:/opt/ros/eloquent/opt/rviz_ogre_vendor/lib:/opt/ros/eloquent/lib/aarch64-linux-gnu:/opt/ros/eloquent/lib:/usr/local/cuda-10.2/lib64:', 'SHLVL': '2', 'QT4_IM_MODULE': 'xim', 'HOME': '/home/auvic', 'OLDPWD': '/home/auvic/kraken', 'DESKTOP_SESSION': 'unity', 'GTK_MODULES': 'gail:atk-bridge', 'ROS_PYTHON_VERSION': '3', 'MANAGERPID': '7524', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'MANDATORY_PATH': '/usr/share/gconf/unity.mandatory.path', 'IM_CONFIG_PHASE': '2', 'ROS_DISTRO': 'eloquent', 'LOGNAME': 'auvic', 'GTK_IM_MODULE': 'ibus', 'JOURNAL_STREAM': '8:39886', '_': '/home/auvic/.local/bin/colcon', 'DEFAULTS_PATH': '/usr/share/gconf/unity.default.path', 'ROS_VERSION': '2', 'USERNAME': 'auvic', 'FLIR_GENTL64_CTI': '/opt/spinnaker/lib/flir-gentl/FLIR_GenTL.cti', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/opt/ros/eloquent/bin:/usr/local/cuda-10.2/bin:/home/auvic/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'INVOCATION_ID': '7c22a47b335445b99d67fd4688266e78', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1a805b73_960a_4a1c_a53f_d281ab5c1dcd', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_CA.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity:Unity7:ubuntu', 'LD_PRELOAD': 'libgtk3-nocsd.so.0', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'XDG_SESSION_DESKTOP': 'unity', 'XMODIFIERS': '@im=ibus', 'GNOME_TERMINAL_SERVICE': ':1.110', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'AMENT_PREFIX_PATH': '/opt/ros/eloquent', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'unity', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TEXTDOMAINDIR': '/usr/share/locale/', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/auvic/kraken/ROS/src/build/kraken', 'CLUTTER_IM_MODULE': 'xim', 'XDG_DATA_DIRS': '/usr/share/unity:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-unity:/etc/xdg', 'PYTHONPATH': '/home/auvic/kraken/ROS/src/build/kraken/prefix_override:/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages:/opt/ros/eloquent/lib/python3.6/site-packages', 'COLCON': '1', 'GENICAM_GENTL64_PATH': '/opt/spinnaker/lib/flir-gentl', 'VTE_VERSION': '5202'}, 'shell': False}
+[3.421815] (-) TimerEvent: {}
+[3.523412] (-) TimerEvent: {}
+[3.624980] (-) TimerEvent: {}
+[3.725645] (-) TimerEvent: {}
+[3.826328] (-) TimerEvent: {}
+[3.926929] (-) TimerEvent: {}
+[4.027547] (-) TimerEvent: {}
+[4.128198] (-) TimerEvent: {}
+[4.228837] (-) TimerEvent: {}
+[4.266696] (kraken) StdoutLine: {'line': b'running egg_info\n'}
+[4.268671] (kraken) StdoutLine: {'line': b'creating ../build/kraken/kraken.egg-info\n'}
+[4.269541] (kraken) StdoutLine: {'line': b'writing ../build/kraken/kraken.egg-info/PKG-INFO\n'}
+[4.270401] (kraken) StdoutLine: {'line': b'writing dependency_links to ../build/kraken/kraken.egg-info/dependency_links.txt\n'}
+[4.270898] (kraken) StdoutLine: {'line': b'writing entry points to ../build/kraken/kraken.egg-info/entry_points.txt\n'}
+[4.271324] (kraken) StdoutLine: {'line': b'writing requirements to ../build/kraken/kraken.egg-info/requires.txt\n'}
+[4.271731] (kraken) StdoutLine: {'line': b'writing top-level names to ../build/kraken/kraken.egg-info/top_level.txt\n'}
+[4.272148] (kraken) StdoutLine: {'line': b"writing manifest file '../build/kraken/kraken.egg-info/SOURCES.txt'\n"}
+[4.328976] (-) TimerEvent: {}
+[4.410612] (kraken) StdoutLine: {'line': b"reading manifest file '../build/kraken/kraken.egg-info/SOURCES.txt'\n"}
+[4.414492] (kraken) StdoutLine: {'line': b"writing manifest file '../build/kraken/kraken.egg-info/SOURCES.txt'\n"}
+[4.415076] (kraken) StdoutLine: {'line': b'running build\n'}
+[4.415465] (kraken) StdoutLine: {'line': b'running build_py\n'}
+[4.416002] (kraken) StdoutLine: {'line': b'creating /home/auvic/kraken/ROS/src/build/kraken/build\n'}
+[4.416452] (kraken) StdoutLine: {'line': b'creating /home/auvic/kraken/ROS/src/build/kraken/build/lib\n'}
+[4.416860] (kraken) StdoutLine: {'line': b'creating /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken\n'}
+[4.417254] (kraken) StdoutLine: {'line': b'copying kraken/__init__.py -> /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken\n'}
+[4.417606] (kraken) StdoutLine: {'line': b'copying kraken/depth_sensor_node.py -> /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken\n'}
+[4.418122] (kraken) StdoutLine: {'line': b'copying kraken/imu_node.py -> /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken\n'}
+[4.418530] (kraken) StdoutLine: {'line': b'running install\n'}
+[4.419153] (kraken) StdoutLine: {'line': b'running install_lib\n'}
+[4.421809] (kraken) StdoutLine: {'line': b'creating /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken\n'}
+[4.422423] (kraken) StdoutLine: {'line': b'copying /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken/__init__.py -> /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken\n'}
+[4.422887] (kraken) StdoutLine: {'line': b'copying /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken/depth_sensor_node.py -> /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken\n'}
+[4.423314] (kraken) StdoutLine: {'line': b'copying /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken/imu_node.py -> /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken\n'}
+[4.424380] (kraken) StdoutLine: {'line': b'byte-compiling /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken/__init__.py to __init__.cpython-36.pyc\n'}
+[4.425059] (kraken) StdoutLine: {'line': b'byte-compiling /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken/depth_sensor_node.py to depth_sensor_node.cpython-36.pyc\n'}
+[4.426781] (kraken) StdoutLine: {'line': b'byte-compiling /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken/imu_node.py to imu_node.cpython-36.pyc\n'}
+[4.427862] (kraken) StdoutLine: {'line': b'running install_data\n'}
+[4.429061] (-) TimerEvent: {}
+[4.429711] (kraken) StdoutLine: {'line': b'creating /home/auvic/kraken/ROS/src/install/kraken/share/ament_index\n'}
+[4.430465] (kraken) StdoutLine: {'line': b'creating /home/auvic/kraken/ROS/src/install/kraken/share/ament_index/resource_index\n'}
+[4.430864] (kraken) StdoutLine: {'line': b'creating /home/auvic/kraken/ROS/src/install/kraken/share/ament_index/resource_index/packages\n'}
+[4.431345] (kraken) StdoutLine: {'line': b'copying resource/kraken -> /home/auvic/kraken/ROS/src/install/kraken/share/ament_index/resource_index/packages\n'}
+[4.431711] (kraken) StdoutLine: {'line': b'copying package.xml -> /home/auvic/kraken/ROS/src/install/kraken/share/kraken\n'}
+[4.432085] (kraken) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.437426] (kraken) StdoutLine: {'line': b'Copying ../build/kraken/kraken.egg-info to /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info\n'}
+[4.440765] (kraken) StdoutLine: {'line': b'running install_scripts\n'}
+[4.523232] (kraken) StdoutLine: {'line': b'Installing depth_sensor script to /home/auvic/kraken/ROS/src/install/kraken/lib/kraken\n'}
+[4.523891] (kraken) StdoutLine: {'line': b'Installing imu script to /home/auvic/kraken/ROS/src/install/kraken/lib/kraken\n'}
+[4.524803] (kraken) StdoutLine: {'line': b"writing list of installed files to '/home/auvic/kraken/ROS/src/build/kraken/install.log'\n"}
+[4.529241] (-) TimerEvent: {}
+[4.618457] (kraken) CommandEnded: {'returncode': 0}
+[4.629467] (-) TimerEvent: {}
+[4.733595] (-) TimerEvent: {}
+[4.840319] (-) TimerEvent: {}
+[4.875977] (kraken) JobEnded: {'identifier': 'kraken', 'rc': 0}
+[4.878826] (-) EventReactorShutdown: {}

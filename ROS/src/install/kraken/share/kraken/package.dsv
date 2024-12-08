@@ -1,0 +1,6 @@
+source;share/kraken/hook/pythonpath.ps1
+source;share/kraken/hook/pythonpath.dsv
+source;share/kraken/hook/pythonpath.sh
+source;share/kraken/hook/ament_prefix_path.ps1
+source;share/kraken/hook/ament_prefix_path.dsv
+source;share/kraken/hook/ament_prefix_path.sh
