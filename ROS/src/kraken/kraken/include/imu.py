@@ -150,13 +150,11 @@ def parse_type(type_list):
 
 	return type_dict
 
-
-while True:
-	if get_byte() != int(0xfa): # Preamble
-		continue
-	if get_byte() != int(0xff): # BID
-		#print("Test")
-		continue
+def get_imu():
+	while get_byte() != int(0xfa): # Preamble
+		pass
+	while get_byte() != int(0xff): # BID
+		pass
 		
 
 	checksum = 255 # Keep a running sum of bytes to calculate checksum (255 for BID)
@@ -164,15 +162,14 @@ while True:
 	mid = get_byte()
 	if mid == int(0x42):
 		print("Error")
-		continue
+		return -1
 	if mid != int(0x36):
 		print("Unknown MID")
-		continue
+		return -1
 
 	checksum += 54
 
 	length = get_byte() # Length of data section
-	#print(length)
 	checksum += length
 	state = 0 # 0: type, 1: length, 2: data
 
@@ -186,7 +183,6 @@ while True:
 	data = {} # Dict containing parsed data
 	for i in range(length):
 		current_byte = get_byte()
-		#print(hex(current_byte))
 		checksum += current_byte
 
 		if state == 0: # Type (2 bytes)
@@ -229,4 +225,4 @@ while True:
 
 	checksum += get_byte()
 	if checksum % 256 == 0:
-		print(data)
+		return data

@@ -26,7 +26,7 @@ class IMU(Node):
         self.timer = self.create_timer(timer_period, self.timer_callback)
      
     def poll_sensor(self):
-        return imu.get_acceleration()
+        return imu.get_imu()
  
     def timer_callback(self):
         
