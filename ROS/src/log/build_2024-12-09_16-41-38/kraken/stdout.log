@@ -1,0 +1,23 @@
+running egg_info
+writing ../build/kraken/kraken.egg-info/PKG-INFO
+writing dependency_links to ../build/kraken/kraken.egg-info/dependency_links.txt
+writing entry points to ../build/kraken/kraken.egg-info/entry_points.txt
+writing requirements to ../build/kraken/kraken.egg-info/requires.txt
+writing top-level names to ../build/kraken/kraken.egg-info/top_level.txt
+reading manifest file '../build/kraken/kraken.egg-info/SOURCES.txt'
+writing manifest file '../build/kraken/kraken.egg-info/SOURCES.txt'
+running build
+running build_py
+copying kraken/depth_sensor_node.py -> /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken
+running install
+running install_lib
+copying /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken/depth_sensor_node.py -> /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken
+byte-compiling /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken/depth_sensor_node.py to depth_sensor_node.cpython-36.pyc
+running install_data
+running install_egg_info
+removing '/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info' (and everything under it)
+Copying ../build/kraken/kraken.egg-info to /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info
+running install_scripts
+Installing depth_sensor script to /home/auvic/kraken/ROS/src/install/kraken/lib/kraken
+Installing imu script to /home/auvic/kraken/ROS/src/install/kraken/lib/kraken
+writing list of installed files to '/home/auvic/kraken/ROS/src/build/kraken/install.log'

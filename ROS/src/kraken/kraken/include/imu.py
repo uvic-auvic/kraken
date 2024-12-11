@@ -77,6 +77,9 @@ type_lookup = {
 "e02": "Status Word"
 }
 
+position = [float(0), float(0), float(0)]
+orientation = [float(0), float(0), float(0)]
+
 # Open a serial port. You may have to change the first parameter
 ser = serial.Serial('/dev/ttyUSB0', 115200, timeout=1)
 
@@ -226,3 +229,18 @@ def get_imu():
 	checksum += get_byte()
 	if checksum % 256 == 0:
 		return data
+		
+		
+def position_thread(data):
+    current_time = time.time()
+    while True:
+        last_time = current_time
+        imu_data = get_imu()
+        current_time = time.time()
+        data[0][0] += float(imu_data["DeltaV"][0]) * (current_time - last_time)
+        data[0][1] += float(imu_data["DeltaV"][1]) * (current_time - last_time)
+        data[0][2] += float(imu_data["DeltaV"][2]) * (current_time - last_time)
+        if "Euler Angles" in imu_data:
+            data[1][0] = float(imu_data["Euler Angles"][0])
+            data[1][1] = float(imu_data["Euler Angles"][1])
+            data[1][2] = float(imu_data["Euler Angles"][2])

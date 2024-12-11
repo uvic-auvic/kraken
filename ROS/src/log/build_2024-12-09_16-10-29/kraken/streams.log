@@ -1,0 +1,25 @@
+[3.487s] Invoking command in '/home/auvic/kraken/ROS/src/kraken': PYTHONPATH=/home/auvic/kraken/ROS/src/build/kraken/prefix_override:/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/kraken build --build-base /home/auvic/kraken/ROS/src/build/kraken/build install --record /home/auvic/kraken/ROS/src/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed
+[4.450s] running egg_info
+[4.452s] writing ../build/kraken/kraken.egg-info/PKG-INFO
+[4.464s] writing dependency_links to ../build/kraken/kraken.egg-info/dependency_links.txt
+[4.466s] writing entry points to ../build/kraken/kraken.egg-info/entry_points.txt
+[4.467s] writing requirements to ../build/kraken/kraken.egg-info/requires.txt
+[4.467s] writing top-level names to ../build/kraken/kraken.egg-info/top_level.txt
+[4.622s] reading manifest file '../build/kraken/kraken.egg-info/SOURCES.txt'
+[4.629s] writing manifest file '../build/kraken/kraken.egg-info/SOURCES.txt'
+[4.630s] running build
+[4.631s] running build_py
+[4.632s] copying kraken/depth_sensor_node.py -> /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken
+[4.633s] running install
+[4.635s] running install_lib
+[4.640s] copying /home/auvic/kraken/ROS/src/build/kraken/build/lib/kraken/depth_sensor_node.py -> /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken
+[4.643s] byte-compiling /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken/depth_sensor_node.py to depth_sensor_node.cpython-36.pyc
+[4.645s] running install_data
+[4.649s] running install_egg_info
+[4.656s] removing '/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info' (and everything under it)
+[4.659s] Copying ../build/kraken/kraken.egg-info to /home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages/kraken-0.0.0-py3.6.egg-info
+[4.663s] running install_scripts
+[4.740s] Installing depth_sensor script to /home/auvic/kraken/ROS/src/install/kraken/lib/kraken
+[4.743s] Installing imu script to /home/auvic/kraken/ROS/src/install/kraken/lib/kraken
+[4.744s] writing list of installed files to '/home/auvic/kraken/ROS/src/build/kraken/install.log'
+[4.845s] Invoked command in '/home/auvic/kraken/ROS/src/kraken' returned '0': PYTHONPATH=/home/auvic/kraken/ROS/src/build/kraken/prefix_override:/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/kraken build --build-base /home/auvic/kraken/ROS/src/build/kraken/build install --record /home/auvic/kraken/ROS/src/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed

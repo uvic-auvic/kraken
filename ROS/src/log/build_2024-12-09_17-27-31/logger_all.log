@@ -1,0 +1,108 @@
+[4.246s] DEBUG:colcon:Command line arguments: ['/home/auvic/.local/bin/colcon', 'build', '--packages-select', 'kraken']
+[4.246s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f7eee9d68>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['kraken'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f7eee9d68>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f7eef6080>)
+[4.453s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.453s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.453s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.453s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.454s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.455s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.455s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/auvic/kraken/ROS/src'
+[4.455s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.456s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.457s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.498s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.499s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.499s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.499s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.499s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.500s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.500s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.503s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extensions ['ignore', 'ignore_ament_install']
+[4.503s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extension 'ignore'
+[4.503s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extension 'ignore_ament_install'
+[4.503s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extensions ['colcon_pkg']
+[4.503s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extension 'colcon_pkg'
+[4.504s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extensions ['colcon_meta']
+[4.504s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extension 'colcon_meta'
+[4.504s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extensions ['ros']
+[4.504s] Level 1:colcon.colcon_core.package_identification:_identify(kraken) by extension 'ros'
+[4.518s] DEBUG:colcon.colcon_core.package_identification:Package 'kraken' with type 'ros.ament_python' and name 'kraken'
+[4.520s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.520s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.521s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.521s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.522s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.820s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'cmake_args' from command line to 'None'
+[4.820s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'cmake_target' from command line to 'None'
+[4.820s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.820s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'cmake_clean_cache' from command line to 'False'
+[4.820s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'cmake_clean_first' from command line to 'False'
+[4.821s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'cmake_force_configure' from command line to 'False'
+[4.821s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'ament_cmake_args' from command line to 'None'
+[4.821s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'catkin_cmake_args' from command line to 'None'
+[4.821s] Level 5:colcon.colcon_core.verb:set package 'kraken' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.821s] DEBUG:colcon.colcon_core.verb:Building package 'kraken' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/auvic/kraken/ROS/src/build/kraken', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/auvic/kraken/ROS/src/install/kraken', 'merge_install': False, 'path': '/home/auvic/kraken/ROS/src/kraken', 'symlink_install': False, 'test_result_base': None}
+[4.882s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.946s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.947s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/auvic/kraken/ROS/src/kraken' with build type 'ament_python'
+[4.948s] Level 1:colcon.colcon_core.shell:create_environment_hook('kraken', 'ament_prefix_path')
+[5.016s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/hook/ament_prefix_path.ps1'
+[5.020s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/hook/ament_prefix_path.dsv'
+[5.021s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/hook/ament_prefix_path.sh'
+[5.091s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.091s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.342s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/auvic/kraken/ROS/src/kraken'
+[6.406s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.221s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/auvic/kraken/ROS/src/kraken': PYTHONPATH=/home/auvic/kraken/ROS/src/build/kraken/prefix_override:/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/kraken build --build-base /home/auvic/kraken/ROS/src/build/kraken/build install --record /home/auvic/kraken/ROS/src/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed
+[9.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/auvic/kraken/ROS/src/kraken' returned '0': PYTHONPATH=/home/auvic/kraken/ROS/src/build/kraken/prefix_override:/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/kraken build --build-base /home/auvic/kraken/ROS/src/build/kraken/build install --record /home/auvic/kraken/ROS/src/build/kraken/install.log --install-scripts $base/lib/kraken --single-version-externally-managed
+[9.572s] Level 1:colcon.colcon_core.environment:checking '/home/auvic/kraken/ROS/src/install/kraken' for CMake module files
+[9.575s] Level 1:colcon.colcon_core.environment:checking '/home/auvic/kraken/ROS/src/install/kraken' for CMake config files
+[9.578s] Level 1:colcon.colcon_core.environment:checking '/home/auvic/kraken/ROS/src/install/kraken/lib'
+[9.579s] Level 1:colcon.colcon_core.environment:checking '/home/auvic/kraken/ROS/src/install/kraken/bin'
+[9.579s] Level 1:colcon.colcon_core.environment:checking '/home/auvic/kraken/ROS/src/install/kraken/lib/pkgconfig/kraken.pc'
+[9.580s] Level 1:colcon.colcon_core.environment:checking '/home/auvic/kraken/ROS/src/install/kraken/lib/python3.6/site-packages'
+[9.580s] Level 1:colcon.colcon_core.shell:create_environment_hook('kraken', 'pythonpath')
+[9.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/hook/pythonpath.ps1'
+[9.652s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/hook/pythonpath.dsv'
+[9.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/hook/pythonpath.sh'
+[9.655s] Level 1:colcon.colcon_core.environment:checking '/home/auvic/kraken/ROS/src/install/kraken/bin'
+[9.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kraken)
+[9.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/package.ps1'
+[9.719s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/package.dsv'
+[9.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/package.sh'
+[9.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/package.bash'
+[9.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/auvic/kraken/ROS/src/install/kraken/share/kraken/package.zsh'
+[9.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/auvic/kraken/ROS/src/install/kraken/share/colcon-core/packages/kraken)
+[9.734s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.735s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.736s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.737s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.821s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.822s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.822s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.891s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auvic/kraken/ROS/src/install/local_setup.ps1'
+[9.961s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/auvic/kraken/ROS/src/install/_local_setup_util_ps1.py'
+[9.970s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auvic/kraken/ROS/src/install/setup.ps1'
+[10.041s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auvic/kraken/ROS/src/install/local_setup.sh'
+[10.044s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/auvic/kraken/ROS/src/install/_local_setup_util_sh.py'
+[10.045s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auvic/kraken/ROS/src/install/setup.sh'
+[10.116s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auvic/kraken/ROS/src/install/local_setup.bash'
+[10.118s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auvic/kraken/ROS/src/install/setup.bash'
+[10.180s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/auvic/kraken/ROS/src/install/local_setup.zsh'
+[10.182s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/auvic/kraken/ROS/src/install/setup.zsh'
