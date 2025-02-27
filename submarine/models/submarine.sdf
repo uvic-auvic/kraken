@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="submarine">
+    <static>false</static>
+    
+    <!-- Main body -->
+    <link name="base_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>10.0</mass>
+        <inertia>
+          <ixx>0.5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.5</iyy>
+          <iyz>0</iyz>
+          <izz>0.5</izz>
+        </inertia>
+      </inertial>
+      
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>1.5 0.8 0.8</size>
+          </box>
+        </geometry>
+      </collision>
+      
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>1.5 0.8 0.8</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.0 0.0 1.0 1.0</ambient>
+          <diffuse>0.0 0.0 1.0 1.0</diffuse>
+          <specular>0.0 0.0 0.1 1.0</specular>
+        </material>
+      </visual>
+      
+      <!-- Add gravity compensation to simulate buoyancy -->
+      <gravity>0</gravity>
+    </link>
+
+    <!-- Main propeller -->
+    <link name="propeller">
+      <pose>-0.8 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.5</mass>
+        <inertia>
+          <ixx>0.001</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.001</iyy>
+          <iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.1</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1.0</ambient>
+          <diffuse>0.5 0.5 0.5 1.0</diffuse>
+        </material>
+      </visual>
+    </link>
+
+    <!-- Joint for propeller -->
+    <joint name="propeller_joint" type="revolute">
+      <parent>base_link</parent>
+      <child>propeller</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+      </axis>
+    </joint>
+
+    <!-- GPS sensor -->
+    <link name="gps_link">
+      <pose>0 0 0.5 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <iyy>0.0001</iyy>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <sensor name="gps_sensor" type="gps">
+        <pose>0 0 0 0 0 0</pose>
+        <update_rate>10</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <!-- Add proper noise configuration -->
+        <gps>
+          <position_sensing>
+            <horizontal>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </horizontal>
+            <vertical>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </vertical>
+          </position_sensing>
+        </gps>
+        <plugin name="gps_plugin" filename="libgazebo_ros_gps_sensor.so">
+          <ros>
+            <namespace>/submarine</namespace>
+          </ros>
+          <frame_name>gps_link</frame_name>
+          <topic_name>gps</topic_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    <!-- IMU sensor for orientation -->
+    <link name="imu_link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.0001</ixx>
+          <iyy>0.0001</iyy>
+          <izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <sensor name="imu_sensor" type="imu">
+        <pose>0 0 0 0 0 0</pose>
+        <update_rate>100</update_rate>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+        <!-- Add proper noise configuration -->
+        <imu>
+          <angular_velocity>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </z>
+          </angular_velocity>
+          <linear_acceleration>
+            <x>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </x>
+            <y>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </y>
+            <z>
+              <noise type="gaussian">
+                <mean>0.0</mean>
+                <stddev>0.01</stddev>
+              </noise>
+            </z>
+          </linear_acceleration>
+        </imu>
+        <plugin name="imu_plugin" filename="libgazebo_ros_imu_sensor.so">
+          <ros>
+            <namespace>/submarine</namespace>
+          </ros>
+          <frame_name>imu_link</frame_name>
+          <topic_name>imu</topic_name>
+        </plugin>
+      </sensor>
+    </link>
+
+    
+    <link name="depth_sensor_link">
+        <sensor name="depth_sensor" type="ray">
+            <pose>0 0 -0.5 0 0 0</pose> <!-- Adjust the pose relative to the submarine's body -->
+            <update_rate>10</update_rate> <!-- Update rate in Hz -->
+            <ray>
+            <scan>
+                <horizontal>
+                <samples>1</samples>
+                <resolution>1.0</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+                </horizontal>
+                <vertical>
+                <samples>1</samples>
+                <resolution>1.0</resolution>
+                <min_angle>-0.1</min_angle> <!-- Small angle for vertical beam -->
+                <max_angle>0.1</max_angle>
+                </vertical>
+            </scan>
+            <range>
+                <min>0.1</min>
+                <max>100.0</max> <!-- Maximum depth range -->
+                <resolution>0.01</resolution>
+            </range>
+            </ray>
+            <plugin name="depth_sensor_plugin" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+                <namespace>/submarine</namespace>
+            </ros>
+            <frame_name>depth_sensor_link</frame_name>
+            <topic_name>depth</topic_name>
+            </plugin>
+        </sensor>
+    </link>
+
+    <!-- Joint connecting body to GPS link -->
+    <joint name="gps_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>gps_link</child>
+    </joint>
+
+    <!-- Joint connecting body to IMU link -->
+    <joint name="imu_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>imu_link</child>
+    </joint>
+
+    <!-- Joint connecting body to depth sensor -->
+    <joint name="depth_sensor_joint" type="fixed">
+        <parent>base_link</parent> <!-- Changed from 'body' to 'base_link' -->
+        <child>depth_sensor_link</child>
+        <pose>0 0 -0.5 0 0 0</pose> <!-- Adjust the pose as needed -->
+    </joint>
+  </model>
+</sdf>
