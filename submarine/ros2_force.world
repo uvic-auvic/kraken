@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!--
+  Gazebo ROS differential drive plugin demo
+
+  Try sending commands:
+
+    ros2 topic pub /demo/cmd_demo geometry_msgs/Twist '{linear: {x: 1.0}}' -1
+
+    ros2 topic pub /demo/cmd_demo geometry_msgs/Twist '{angular: {z: 0.1}}' -1
+
+  Try listening to odometry:
+
+    ros2 topic echo /demo/odom_demo
+
+  Try listening to TF:
+
+    ros2 run tf2_ros tf2_echo odom_demo chassis
+
+    ros2 run tf2_ros tf2_echo chassis right_wheel
+
+    ros2 run tf2_ros tf2_echo chassis left_wheel
+-->
+<sdf version="1.6">
+  <world name="default">
+    <gravity>0 0 0.001</gravity>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name='vehicle'>
+      <pose>0 0 1 0 -0 0</pose>
+
+      <link name='chassis'>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <mass>2</mass>
+          <inertia>
+            <ixx>0.126164</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.416519</iyy>
+            <iyz>0</iyz>
+            <izz>0.481014</izz>
+          </inertia>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2 1 0.5</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>2 1 0.5</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+
+      <plugin name='force' filename='libgazebo_ros_force.so'>
+
+        <ros>
+          <namespace>/kraken</namespace>
+	  <remapping>gazebo_ros_force:=force</remapping>
+        </ros>
+
+        <link_name>chassis</link_name>
+
+	<force_frame>link</force_frame>
+
+      </plugin>
+
+    </model>
+
+         
+
+  </world>
+</sdf>
